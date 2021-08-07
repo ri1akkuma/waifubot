@@ -101,13 +101,13 @@ scrollbar = Scrollbar(base, command=ChatLog.yview, cursor="heart")
 ChatLog['yscrollcommand'] = scrollbar.set
 
 # Create PhotoImage object
-nico_is_here = r"C:\Users\Generic\Documents\chatbot\images\whiteday-nico.png"
+nico_is_here = r"images\whiteday-nico.png"
 og_nico = PILI.open(nico_is_here)
 smol_nico = og_nico.resize((410,590), PILI.ANTIALIAS)
 nico_image = ImageTk.PhotoImage(smol_nico)
 
 # nico_image = PhotoImage(file=r"C:\Users\Generic\Documents\chatbot\images\whiteday-nico.png")
-send_image = PhotoImage(file=r"C:\Users\Generic\Documents\chatbot\images\airplane-send-3.png")
+send_image = PhotoImage(file=r"images\airplane-send-3.png")
 send_button_image = send_image.subsample(7)
 
 #Create Button to send message
